@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<!-- HTML Codes by Quackit.com -->
-<title>
-</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
-h1{font-family:Times, serif;color:#000000;background-color:#ffffff;}
-p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="game.js"></script>
+    <script defer src="resources.js"></script>
+    <script src="saveInfo.js"></script>
+    <title>JS Text Adventure Game</title>
 </head>
 <body>
-<h1>Hello world</h1>
-<p></p>
+    <div class="container">
+        <div id="text">Text</div>
+        <button id="woodGatherButton" onclick="gatherWood()" class="buttonClass">Gather Wood</button>
+        <button id="merchantButton" onclick="merchant()" class="buttonClass">Trade with Merchant</button>
+        <button id="buyFishingPole" onclick="fishingPole()" class="buttonClass">Buy a Fishing Pole? 30 Wood</button>
+        <button id="fishing" onclick="" class="buttonClass">Fish</button>
+
+        <button id="saveButton" onclick="saveGame()" class="saveButtonClass">Save Game</button>
+        <button id="restartButton" onclick="restart()" class="saveButtonClass">Restart</button>
+        <button id="clearGameConsole" onclick="clearGameConsole()" class="saveButtonClass">Clear Game Console</button>
+        <div class="gameConsoleClass" id="gameEventText">gameEventText</div>
+    </div>
+
+    
 </body>
 </html>
