@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="game.js"></script>
+    <script defer src="resources.js"></script>
+    <script defer src="inventory.js"></script>
+    <script src="saveInfo.js"></script>
+    <script src="npcs.js"></script>
+    <script src="text.js"></script>
+    <title>JS Text Adventure Game</title>
+</head>
+<body>
+    <div class="container">
+        <div id="text">Text</div>
+        <div class="buttonGrid">
+            <button id="woodGatheringButton" onclick="gatherWood()" class="buttonClass">Gather Wood</button>
+            <button id="carpenterButton" onclick="carpenter()" class="buttonClass">Carpenter</button>
+            <button id="optionButton" onclick="setOptionButton()" class="buttonClass">optionButton</button>
+            <button id="merchantButton" onclick="merchant()" class="buttonClass">Trade with Merchant</button>
+            <button id="fishingButton" onclick="fish()" class="buttonClass">Fish</button>
+            <button id="inventoryButton" onclick="checkInventory()" class="buttonClass">Inventory</button>
+            <button id="clearGameConsole" onclick="clearGameConsole()" class="buttonClass">Clear Game Console</button>
+            <button id="restartButton" onclick="restart()" class="buttonClass">Restart</button>
+            <button id="saveButton" onclick="saveGame(true)" class="buttonClass">Save Game</button>
+
+        </div>
+        <div class="gameConsoleClass" id="gameEventText">gameEventText</div>
+    </div>
+
+
+</body>
+</html>
